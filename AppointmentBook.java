@@ -1,11 +1,8 @@
 public class AppointmentBook {
-    private Array period = 1,2,3,4,5,6,7,8];
-    private int minute = Math.random() * 59;
-    private int startMinute;
-    private int duration;
-    private int startPeriod;
-    private int endPeriod;
-    
+    private boolean[][] schedule;
+    public AppointmentBook(boolean[][] schedule){
+        this.schedule = schedule;
+    }
 
     private boolean isMinuteFree(int period, int minute) {
 
