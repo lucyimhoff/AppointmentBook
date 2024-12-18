@@ -38,6 +38,16 @@ public static void main(String[] args) {
     for(int i = 5; i < 30; i++) schedule[3][i] = true;
     for(int i = 44; i < 60; i++) schedule[3][i] = true;
     AppointmentBook c = new AppointmentBook(schedule);
+    System.out.println(c.makeAppointment(2, 4, 22));
+    System.out.println(c.makeAppointment(3, 4, 3));
+    System.out.println(c.makeAppointment(2, 4, 30));
+    int periodt = 2;
+    while(periodt < 5)
+    {
+        System.out.println("Period: " + periodt);
+        c.printPeriod(periodt);
+        periodt++;
+    }
 
 }
 
